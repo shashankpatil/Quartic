@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  rulesengine:
+    image: ${DOCKER_REGISTRY}rulesengine
+    build:
+      context: .
+      dockerfile: RulesEngine/Dockerfile
